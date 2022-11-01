@@ -222,18 +222,17 @@ Use the getRandomFlavors function and new arrays below to do the following:
 
 function getRandomFlavors(ar1, ar2, ar3, ar4){
   const allAr = [...ar1,...ar2,...ar3,...ar4];
-  const tally = allAr.length;
   const finalAr = [];
-  function lottery(){
-    return Math.floor(Math.random() * (tally));
-  }
-  console.log(lottery());
   for (let i = 0; i < 31; i++){
-    let n = lottery();
+    let n = Math.floor(Math.random() * (allAr.length));
     if(finalAr.includes(allAr[n]) == false){
-      finalAr[i] = allAr[lottery()];      
+      // console.log(n)
+      // console.log(allAr[n])
+      finalAr[i] = allAr[n];      
     } else {
-      i - 1;
+      // console.log(i);
+      i--;
+      // console.log(i);
     }
   }
   return finalAr;
