@@ -64,8 +64,13 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-  /*your code here*/
+function is31Flavors(check31){
+  const count = check31.length;
+  if (count === 31) {
+    return true;
+  } else {
+    return false;
+  }
  }
 
 
