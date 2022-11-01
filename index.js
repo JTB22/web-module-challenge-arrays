@@ -220,8 +220,23 @@ Use the getRandomFlavors function and new arrays below to do the following:
 */
 
 
-function getRandomFlavors(/*code here*/){
-  /*code here*/
+function getRandomFlavors(ar1, ar2, ar3, ar4){
+  const allAr = [...ar1,...ar2,...ar3,...ar4];
+  const tally = allAr.length;
+  const finalAr = [];
+  function lottery(){
+    return Math.floor(Math.random() * (tally));
+  }
+  console.log(lottery());
+  for (let i = 0; i < 31; i++){
+    let n = lottery();
+    if(finalAr.includes(allAr[n]) == false){
+      finalAr[i] = allAr[lottery()];      
+    } else {
+      i - 1;
+    }
+  }
+  return finalAr;
 }
 
 // NEW DATA ARRAYS FOR STRETCH 2 ⬇️
