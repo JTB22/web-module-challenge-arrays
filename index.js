@@ -199,7 +199,11 @@ Use the getAverageWordLength function below to do the following:
 */
 
 function getAverageWordLength(array){
-//  for (let i = 0; i < array.Length)
+  let totalLetters = 0;
+  for (let i = 0; i < array.length; i++) {
+    totalLetters = totalLetters + array[i].length;
+  }
+  return totalLetters / array.length;
 }
 
 
