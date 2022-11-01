@@ -88,8 +88,9 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-  /*your code here*/
+function addFlavor(flavors, add){
+  flavors.unshift(add);
+  return flavors;
  }
 
 
@@ -106,8 +107,9 @@ Use the removeLastFlavor function below to do the following:
 */
 
 
-function removeLastFlavor(/*your code here*/){
- /*your code here*/
+function removeLastFlavor(remove){
+  remove.pop();
+  return remove;
 }
 
 
@@ -124,8 +126,8 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 
-function getFlavorByIndex(/*your code here*/){
-  /*your code here*/
+function getFlavorByIndex(flavors, index){
+  return flavors[index];
 }
 
 
@@ -144,8 +146,10 @@ Use the removeFlavorByName function below to do the following:
   HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-  /*your code here*/
+function removeFlavorByName(flavors, id){
+  const index = flavors.indexOf(id);
+  flavors.splice(index, 1);
+  return flavors;
 }
 
 
