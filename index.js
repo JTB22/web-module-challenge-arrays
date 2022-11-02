@@ -129,6 +129,7 @@ function getFlavorByIndex(flavors, index){
   return flavors[index];
 }
 
+console.log('task 5: ', getFlavorByIndex(originalFlavors, 2));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
