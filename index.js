@@ -184,6 +184,7 @@ function filterByWord(list, flavor){
   return filteredArray;
 }
 
+console.log('task 7: ', filterByWord(originalFlavors, 'Chocolate'));
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
