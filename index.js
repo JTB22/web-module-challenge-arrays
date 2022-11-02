@@ -47,10 +47,9 @@ Use the copy function below to do the following:
 
 
 function copy(original){
-  const clone = [...original];
-  return clone;
+  return [...original];
 }
-
+console.log('task 1: ', copy(originalFlavors));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -65,13 +64,13 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 
 function is31Flavors(check31){
-  const count = check31.length;
-  if (count === 31) {
+  if (check31.length === 31) {
     return true;
   } else {
     return false;
   }
  }
+ console.log('task 2: ', is31Flavors(originalFlavors));
 
 
 
@@ -93,7 +92,7 @@ function addFlavor(flavors, add){
   return flavors;
  }
 
-
+console.log('task 3: ', addFlavor(originalFlavors,'Rainbow Sherbert'));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Houston, we have a problem! There are now 32 flavors in the originalFlavors array! Your task is to remove an item from the end of the array. 
@@ -112,7 +111,7 @@ function removeLastFlavor(remove){
   return remove;
 }
 
-
+console.log('task 4: ', removeLastFlavor(originalFlavors));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function that returns a flavor at a given index in the array.
